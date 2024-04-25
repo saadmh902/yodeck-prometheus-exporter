@@ -20,5 +20,7 @@ Export YoDeck Online/Offline status for use with prometheus/grafana
     metrics_path: /metrics
 
 **Run yodeck-exporter.py**
+
 **Launch Prometheus**
+
 **Prometheus will now load data**
