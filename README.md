@@ -7,7 +7,7 @@ Export YoDeck Online/Offline status for use with prometheus/grafana
 
 
 **Add this into your prometheus config:**
-<code>
+'''
   - job_name: "yodeck"
   - 
     static_configs:
@@ -18,7 +18,7 @@ Export YoDeck Online/Offline status for use with prometheus/grafana
     scrape_timeout: 40s
     
     metrics_path: /metrics
-</code>
+'''
 
 **Run yodeck-exporter.py**
 
