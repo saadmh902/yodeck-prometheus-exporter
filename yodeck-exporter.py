@@ -48,7 +48,7 @@ class MyHandler(http.server.BaseHTTPRequestHandler):
 
             displayedText += "# TYPE request_processing_seconds summary\n" 
             displayedText = displayedText + 'request_processing_seconds ' + str(time.monotonic() - start_time) + '\n'
-            print(displayedText)
+            #print(displayedText)
             print(("Collected {} values").format(len(jsonObject["objects"])))
             
             self.wfile.write(displayedText.encode('utf-8'))
