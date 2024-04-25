@@ -13,7 +13,6 @@ Add this into your prometheus config:
     static_configs:
     
       - targets: ["localhost:3304"]
-      - 
     scrape_interval: 120s
 
     scrape_timeout: 40s
