@@ -6,4 +6,13 @@ Open yodeck-exporter.py add your API key and username
 
 run yodeck-exporter.py
 
-add localhost:3303 to your prometheus config
+Add this into your prometheus config:
+
+  - job_name: "yodeck"
+    static_configs:
+      - targets: ["localhost:3304"]
+    scrape_interval: 120s
+    scrape_timeout: 40s
+    metrics_path: /metrics
+
+Prometheus will now load data
