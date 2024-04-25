@@ -2,7 +2,7 @@
 Export YoDeck Online/Offline status for use with prometheus/grafana
 
 
-Open yodeck-exporter.py, edit line 30 and add your username and API key
+Open yodeck-exporter.py add your API key and username
 
 run yodeck-exporter.py
 
